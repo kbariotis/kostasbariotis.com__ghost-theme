@@ -1,0 +1,33 @@
+<div class="extra-pagination inner text-center">
+  {{pagination}}
+</div>
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+  <article class="{{post_class}}">
+    <hr/>
+
+    <header class="post-header">
+      <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+    </header>
+
+    <section class="post-excerpt">
+      <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+    </section>
+
+    <footer class="row post-meta">
+      <div class="medium-8 tags">
+        {{tags separator=" &bullet; " prefix="Talking about: " }}
+      </div>
+
+      <div class="medium-4 date text-right">
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+      </div>
+
+    </footer>
+  </article>
+{{/foreach}}
+
+<div class="extra-pagination inner text-center">
+  {{pagination}}
+</div>

@@ -1,0 +1,11 @@
+{
+  "name": "stakisko-github-io",
+  "version": "0.2",
+  "dependencies": {
+    "jquery": "~1.9.1",
+    "pjax": "~0.1.4"
+  },
+  "devDependencies": {
+    "bootstrap-sass-twbs": "~3.3.1"
+  }
+}

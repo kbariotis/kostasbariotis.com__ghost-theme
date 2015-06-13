@@ -1,0 +1,58 @@
+.footer {
+  color:       $lightBackground;
+  font-weight: lighter;
+  text-align:  center;
+  background:  $darkOrange;
+  padding:     $vpadding * 4 0;
+  font-size:   0.9em;
+}
+
+.footer-link {
+  color: $lightBackground;
+  background-color: $lightBlack;
+
+  &:hover {
+    color: $darkOrange;
+  }
+}
+
+.footer-social {
+  font-size:        0.8em;
+  padding:          $vpadding * 2 0;
+  color:            white;
+  background-color: $lightBlack;
+
+  ul.social {
+    text-align: center;
+    padding: 0;
+
+    a {
+      color: $lightBackground;
+    }
+
+    li {
+      display:               inline-block;
+      width:                 90px;
+      height:                90px;
+      font-size:             3.4em;
+      text-align:            center;
+      line-height:           80px;
+      border:                .1em solid $lightBackground;
+      -webkit-border-radius: 50%;
+      border-radius:         50%;
+      margin:                10px;
+      transition:            all .1s ease;
+
+      &:hover, &:focus {
+        background-color:      $lightBackground;
+        -webkit-transform:     rotate(360deg);
+        -moz-transform:        rotate(360deg);
+        -ms-transform:         rotate(360deg);
+        transform:             rotate(360deg);
+        a {
+          color: $darkOrange;
+        }
+      }
+    }
+  }
+}

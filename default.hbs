@@ -1,0 +1,157 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>{{meta_title}}</title>
+  <meta name="author" content="Kostas Bariotis">
+  <meta name="description" content="{{meta_description}}">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="HandheldFriendly" content="True"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" type="text/css" href="{{asset "css/boot.css"}}"/>
+
+  <link rel="shortcut icon" href="{{ asset "favicon/favicon.ico" }}">
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ asset "favicon/apple-touch-icon-57x57.png" }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ asset "favicon/apple-touch-icon-114x114.png" }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ asset "favicon/apple-touch-icon-72x72.png" }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ asset "favicon/apple-touch-icon-144x144.png" }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ asset "favicon/apple-touch-icon-60x60.png" }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ asset "favicon/apple-touch-icon-120x120.png" }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ asset "favicon/apple-touch-icon-76x76.png" }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ asset "favicon/apple-touch-icon-152x152.png" }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ asset "favicon/apple-touch-icon-180x180.png" }}">
+  <meta name="apple-mobile-web-app-title" content="Kostas Bariotis">
+  <link rel="icon" type="image/png" href="{{ asset "favicon/favicon-192x192.png" sizes="192x192" }}">
+  <link rel="icon" type="image/png" href="{{ asset "favicon/favicon-160x160.png" sizes="160x160" }}">
+  <link rel="icon" type="image/png" href="{{ asset "favicon/favicon-96x96.png" sizes="96x96" }}">
+  <link rel="icon" type="image/png" href="{{ asset "favicon/favicon-16x16.png" sizes="16x16" }}">
+  <link rel="icon" type="image/png" href="{{ asset "favicon/favicon-32x32.png" sizes="32x32" }}">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="{{ asset "favicon/mstile-144x144.png" }}">
+  <meta name="msapplication-config" content="{{ asset "favicon/browserconfig.xml" }}">
+  <meta name="application-name" content="Kostas Bariotis">
+
+  <meta name="google-site-verification" content="2cN-EmJ2d00_gaP6eUs43tdcXd1UL965Rs_UBQc0Oec" />
+
+  {{ghost_head}}
+
+</head>
+<body
+  itemscope itemtype="http://schema.org/WebPage"
+  class="{{body_class}}">
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand header-logo" itemprop="name" href="/"><strong>{{@blog.title}}</strong></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{{{body}}}
+
+<header class="header">
+  <div class="container">
+    <div class="text-center h2">
+      About
+    </div>
+  </div>
+</header>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="medium-8 medium-offset-2">
+        I'm <a class="footer-link" href="{{@blog.url}}" title="Kostasbariotis.com Home">Kostas Bariotis</a>, a Web
+        Engineer. My mission is to write clean and efficient code, to create friendly UX’s on the Web and to learn
+        something more. Read <a class="footer-link" href="{{@blog.url}}/about" title="About Kostasbariotis.com">more about
+        me</a> or get in touch.
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<footer class="footer-social">
+  <ul class="social">
+    <li>
+      <a target="_blank" href="http://twitter.com/kbariotis" title="tweet me"><i class="entypo-twitter"></i></a>
+    </li>
+    <li>
+      <a target="_blank" href="http://github.com/kbariotis" title="contribute"><i class="entypo-github"></i></a>
+    </li>
+    <li>
+      <a target="_blank" href="http://www.linkedin.com/pub/kostas-bariotis/81/b74/2a8" title="linkedin"><i
+        class="entypo-linkedin"></i></a>
+    </li>
+    <li>
+      <a target="_blank" href="mailto:konmpar@gmail.com" title="konmpar@gmail.com"><i class="entypo-mail"></i></a>
+    </li>
+  </ul>
+  <div class="text-center">
+    <section class="copyright"><a href="{{@blog.url}}" class="footer-link" title="Kostasbariotis.com Home">{{@blog
+    .title}}</a>
+      &copy; {{date
+    format="YYYY"}}</section>
+  </div>
+</footer>
+
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+  improve your experience.</p>
+<![endif]-->
+
+{{ghost_foot}}
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-40793458-2', 'kostasbariotis.com');
+  ga('send', 'pageview');
+</script>
+
+<!-- build:js js/main.js -->
+<script src="/components/jquery/jquery.min.js"></script>
+<script src="/components/pjax/src/pjax.js"></script>
+<script src="/components/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script src="{{asset "js/script.js"}}"></script>
+<!-- endbuild -->
+</body>
+</html>

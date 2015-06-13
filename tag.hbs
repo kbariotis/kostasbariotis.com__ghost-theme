@@ -1,0 +1,30 @@
+{{!< default}}
+
+<header class="header post-head">
+  <div class="container">
+    <div class="text-center">
+
+      <h1 class="post-title">{{tag.name}}</h1>
+
+      <h2 class="tag-meta">
+        A {{pagination.total}}-post collection
+          by <a href="{{@blog.url}}" title="Kostas Bariotis" class="post-author">Kostas Bariotis</a>
+      </h2>
+
+    </div>
+  </div>
+</header>
+
+<main class="content" role="main">
+
+  <section class="blog">
+    <div class="container">
+
+      <div class="posts">
+        {{> "loop"}}
+      </div>
+
+    </div>
+
+  </section>
+</main>

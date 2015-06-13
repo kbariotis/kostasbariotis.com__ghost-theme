@@ -1,0 +1,83 @@
+/* entypo */
+[class*="entypo-"] {
+  font-style: normal;
+
+  &:before {
+    font-family: 'entypo', sans-serif;
+  }
+}
+
+html,
+body {
+  background-color: $background;
+  color: $lightBlack;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+a,
+a:active,
+a:focus {
+  color: $darkOrange;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $lightBlack;
+  }
+}
+
+p {
+  margin: 0 0 ($line-height-computed);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+  background-color: $lightBackground;
+
+  .header-avatar {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: $vpadding*2 0;
+    max-width: 316px;
+    width: 100%;
+  }
+
+}
+
+.nopadding {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.navbar-default {
+  background: $lightBackground;
+}
+
+.navbar-brand {
+  font-family: Ubuntu, Verdana, sans-serif;
+  font-size: 1.5em;
+}
+
+.navbar {
+  border: none;
+  margin-bottom: 0;
+}
+
+.nav>li>a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-collapse {
+  overflow: hidden;
+}

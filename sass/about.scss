@@ -29,40 +29,6 @@
 
 }
 
-
-.resume__section-skills {
-
-  /** Credits on : http://codepen.io/Metty/pen/CjemI */
-  .bean-skills {
-    margin: 0 1%;
-    padding: 0;
-  }
-
-  .bean-skillset {
-    width: 100%;
-    list-style: none;
-
-    .skill-bar {
-      background-color: #7BC673;
-      color: #FFF;
-      font: bold 15px/26px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-      margin-bottom: 3px;
-      padding: 2px 8px;
-      width: 300px;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      border-radius: 3px;
-      -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-      -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    }
-  }
-
-  .skill-percent {
-    float: right;
-  }
-}
-
 .resume__section-personal {
   ul {
     li {
@@ -80,4 +46,9 @@
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
     }
   }
+}
+
+.resume__section {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

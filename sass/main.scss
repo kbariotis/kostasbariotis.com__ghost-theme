@@ -76,8 +76,21 @@ h6 {
 .nav>li>a {
   padding-top: 15px;
   padding-bottom: 15px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus{
+  background: $orange;
+  color: white;
 }
 
 .navbar-collapse {
   overflow: hidden;
+}
+
+.archive-list-title,
+.tag-page-title{
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

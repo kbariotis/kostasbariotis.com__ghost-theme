@@ -87,7 +87,8 @@
   }
 }
 
-.post-template {
+.post-template,
+.tag-template {
   background: $lightBackground;
 
   .post-head {
@@ -131,4 +132,9 @@ hr {
   background: -ms-linear-gradient(left, rgba(255,250,231,1) 0%,rgba(255,102,0,1) 50%,rgba(255,250,231,1) 100%); /* IE10+ */
   background: linear-gradient(to right, rgba(255,250,231,1) 0%,rgba(255,102,0,1) 50%,rgba(255,250,231,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffae7', endColorstr='#fffae7',GradientType=1 ); /* IE6-9 */
+}
+
+.extra-pagination {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

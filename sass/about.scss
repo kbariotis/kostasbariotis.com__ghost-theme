@@ -8,7 +8,7 @@
     }
 
     a {
-      color: $lightBackground;
+      color:           $lightBackground;
       text-decoration: underline;
     }
 
@@ -22,9 +22,9 @@
 .resume__inner {
 
   h1, h2, h3, h4, h5 {
-    color: $purple;
+    color:         $purple;
     border-bottom: 1px solid $purple;
-    font-family: 'Ubuntu', sans-serif;
+    font-family:   'Ubuntu', sans-serif;
   }
 
 }
@@ -32,23 +32,23 @@
 .resume__section-personal {
   ul {
     li {
-      background-color: #7BC673;
-      color: $lightBackground;
-      font: bold 15px/26px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-      margin-bottom: 3px;
-      padding: 2px 8px;
-      width: auto;
+      background-color:      #7BC673;
+      color:                 $lightBackground;
+      font:                  bold 15px/26px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+      margin-bottom:         3px;
+      padding:               2px 8px;
+      width:                 auto;
       -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      border-radius: 3px;
-      -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-      -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+      -moz-border-radius:    3px;
+      border-radius:         3px;
+      -webkit-box-shadow:    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+      -moz-box-shadow:       inset 0 1px 0 rgba(255, 255, 255, 0.3);
+      box-shadow:            inset 0 1px 0 rgba(255, 255, 255, 0.3);
     }
   }
 }
 
 .resume__section {
-  margin-top: 50px;
+  margin-top:    50px;
   margin-bottom: 50px;
 }

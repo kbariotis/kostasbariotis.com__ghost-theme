@@ -10,17 +10,17 @@
 html,
 body {
   background-color: $background;
-  color: $lightBlack;
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+  color:            $lightBlack;
+  font-family:      'Roboto', sans-serif;
+  font-weight:      lighter;
 }
 
 a,
 a:active,
 a:focus {
-  color: $darkOrange;
+  color:           $darkOrange;
   text-decoration: none;
-  transition: color 0.3s;
+  transition:      color 0.3s;
 
   &:hover {
     color: $lightBlack;
@@ -45,18 +45,18 @@ h6 {
 
   .header-avatar {
     -webkit-border-radius: 50%;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin: $vpadding*2 0;
-    max-width: 316px;
-    width: 100%;
+    border-radius:         50%;
+    vertical-align:        middle;
+    margin:                $vpadding*2 0;
+    max-width:             316px;
+    width:                 100%;
   }
 
 }
 
 .nopadding {
   padding-right: 0 !important;
-  padding-left: 0 !important;
+  padding-left:  0 !important;
 }
 
 .navbar-default {
@@ -65,24 +65,24 @@ h6 {
 
 .navbar-brand {
   font-family: Ubuntu, Verdana, sans-serif;
-  font-size: 1.5em;
+  font-size:   1.5em;
 }
 
 .navbar {
-  border: none;
+  border:        none;
   margin-bottom: 0;
 }
 
-.nav>li>a {
-  padding-top: 15px;
+.nav > li > a {
+  padding-top:    15px;
   padding-bottom: 15px;
-  transition: background 0.3s, color 0.3s;
+  transition:     background 0.3s, color 0.3s;
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus{
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
   background: $orange;
-  color: white;
+  color:      white;
 }
 
 .navbar-collapse {
@@ -90,7 +90,7 @@ h6 {
 }
 
 .archive-list-title,
-.tag-page-title{
-  margin-top: 25px;
+.tag-page-title {
+  margin-top:    25px;
   margin-bottom: 25px;
 }

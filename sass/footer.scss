@@ -8,7 +8,7 @@
 }
 
 .footer-link {
-  color: $lightBackground;
+  color:            $lightBackground;
   background-color: $lightBlack;
 
   &:hover {
@@ -24,7 +24,7 @@
 
   ul.social {
     text-align: center;
-    padding: 0;
+    padding:    0;
 
     a {
       color: $lightBackground;
@@ -44,11 +44,11 @@
       transition:            all .1s ease;
 
       &:hover, &:focus {
-        background-color:      $lightBackground;
-        -webkit-transform:     rotate(360deg);
-        -moz-transform:        rotate(360deg);
-        -ms-transform:         rotate(360deg);
-        transform:             rotate(360deg);
+        background-color:  $lightBackground;
+        -webkit-transform: rotate(360deg);
+        -moz-transform:    rotate(360deg);
+        -ms-transform:     rotate(360deg);
+        transform:         rotate(360deg);
         a {
           color: $darkOrange;
         }

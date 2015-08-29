@@ -60,7 +60,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand header-logo" itemprop="name" href="/"><strong>{{@blog.title}}</strong></a>
+      {{#if @blog.logo}}
+        <a class="navbar-brand header-logo" itemprop="name" href="{{@blog.url}}">
+          <img class="header-avatar" src="{{@blog.logo}}" alt="{{@blog.url}}"/>
+        </a>
+      {{/if}}
+      <h1>Kostas Bariotis</h1>
+      <p>I'm Kostas Bariotis, a <a href="http://goodvid.io">Goodvidio</a>
+        Engineer. My mission is to write clean and efficient code, to solve problems on the Web and to learn something more. </p>
     </div>
 
     <div class="collapse navbar-collapse" id="main-menu">
@@ -73,22 +80,16 @@
   </div>
 </nav>
 
+<section class="main-content">
 {{{body}}}
-
-<header class="header">
-  <div class="container">
-    <div class="text-center h2">
-      About
-    </div>
-  </div>
-</header>
+</section>
 
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="medium-8 medium-offset-2">
+      <div class="medium-8 medium-offset-2 text-center">
         I'm <a class="footer-link" href="{{@blog.url}}" title="Kostasbariotis.com Home">Kostas Bariotis</a>, a Web
-        Engineer. My mission is to write clean and efficient code, to create friendly UX’s on the Web and to learn
+        Engineer. My mission is to write clean and efficient code, to solve problems on the Web and to learn
         something more. Read <a class="footer-link" href="{{@blog.url}}/about" title="About Kostasbariotis.com">more about
         me</a> or get in touch.
       </div>
@@ -114,10 +115,8 @@
     </li>
   </ul>
   <div class="text-center">
-    <section class="copyright"><a href="{{@blog.url}}" class="footer-link" title="Kostasbariotis.com Home">{{@blog
-    .title}}</a>
-      &copy; {{date
-    format="YYYY"}}</section>
+    Copyright {{date format="YYYY"}} <a href="{{@blog.url}}" title="Kostasbariotis.com Home">{{@blog
+  .title}}</a> • Design by <a href="http://attheo.do" target="_blank">Thanos Theodoridis</a>
   </div>
 </footer>
 

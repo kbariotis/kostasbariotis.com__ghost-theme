@@ -1,83 +1,39 @@
 {{!< default}}
 
-<header class="header">
-  <div class="container">
-    <div class="text-center">
-      {{#if @blog.logo}}
-        <a class="blog" href="{{@blog.url}}">
-          <img class="header-avatar" src="{{@blog.logo}}" alt="{{@blog.url}}"/>
-        </a>
-      {{/if}}
-    </div>
-  </div>
-</header>
+<section class="blog container">
 
-<section class="main">
-  <div class="interests container text-center">
-    <p class="about-me h1">
-      Usually I write code
-    </p>
-    <p itemprop="description">
-      My mission is to write clean and efficient code and to learn something more.
-    </p>
+  <div class="medium-8 medium-offset-2">
 
-    <p class="about-me h1">
-      Currently I write code at
-      <a target="_blank" href="http://goodvid.io/"
-         title="Goodvid.io">Goodvid.io</a>
-    </p>
-    <p>
-      We try to bring you the best social videos directly in your product pages.
-    </p>
+    <header class="header">
+      Latest Posts
+    </header>
 
-    <p class="about-me h1">
-      When I am not writing code
-    </p>
-    <p>
-      I like reading history and IT books, exercising and snowboarding.
-    </p>
-  </div>
-</section>
-
-
-<header class="header">
-  <div class="header-inner container">
-    <div class="text-center h1">
-      Blog
-    </div>
-  </div>
-</header>
-<section class="blog">
-
-  <div class="medium-10 medium-offset-1">
+    <div class="separator"><div class="first-level"><div class="second-level"><div class="third-level"></div></div></div></div>
 
     <div class="posts">
       {{#foreach posts}}
           <article class="{{post_class}}">
-            <hr/>
 
             <header class="header post-head">
               <h1 class="post-title"><a href="{{ url }}">{{ title }}</a></h1>
-
             </header>
 
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+
             <section class="post-excerpt">
-              <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+              <p>{{excerpt words="100"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
             </section>
 
-            <footer class="row post-meta">
-              <div class="medium-8 tags">
+            <footer class="post-meta">
+              <div class="tags">
                 {{tags separator=" &bullet; " prefix="Talking about: " }}
               </div>
-
-              <div class="medium-4 date text-right">
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-              </div>
-
             </footer>
 
           </article>
       {{/foreach}}
+
+      <div class="separator"><div class="first-level"><div class="second-level"><div class="third-level"></div></div></div></div>
 
       <article class="post text-right">
         <header class="header post-head">

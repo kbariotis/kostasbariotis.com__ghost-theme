@@ -1,56 +1,51 @@
 .footer {
-  color:       $lightBackground;
-  font-weight: lighter;
-  text-align:  center;
-  background:  $darkOrange;
-  padding:     $vpadding * 4 0;
-  font-size:   0.9em;
-}
-
-.footer-link {
-  color:            $lightBackground;
-  background-color: $lightBlack;
-
-  &:hover {
-    color: $darkOrange;
-  }
+  background: $darkpurple;
+  color:      $lightpurple;
+  font-size:  14px;
+  font-family: 'Avenir LT Std 35 Light', sans-serif;
+  padding:    20px 0 30px 0;
 }
 
 .footer-social {
-  font-size:        0.8em;
-  padding:          $vpadding * 2 0;
-  color:            white;
-  background-color: $lightBlack;
+  background: $darkerpurple;
+  padding:    $vpadding * 2 0;
+  color:      $darkpurple;
+  font-size:  14px;
+
+  a {
+    color: $lightpurple;
+  }
 
   ul.social {
+    font-size:  0.5em;
     text-align: center;
     padding:    0;
 
     a {
-      color: $lightBackground;
+      color: $lightblue;
     }
 
     li {
       display:               inline-block;
-      width:                 90px;
-      height:                90px;
+      width:                 60px;
+      height:                60px;
       font-size:             3.4em;
       text-align:            center;
-      line-height:           80px;
-      border:                .1em solid $lightBackground;
+      line-height:           55px;
+      border:                .1em solid $lightblue;
       -webkit-border-radius: 50%;
       border-radius:         50%;
       margin:                10px;
       transition:            all .1s ease;
 
       &:hover, &:focus {
-        background-color:  $lightBackground;
+        background-color:  $darkpurple;
         -webkit-transform: rotate(360deg);
         -moz-transform:    rotate(360deg);
         -ms-transform:     rotate(360deg);
         transform:         rotate(360deg);
         a {
-          color: $darkOrange;
+          text-decoration: none;
         }
       }
     }

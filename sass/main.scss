@@ -10,25 +10,9 @@
 html,
 body {
   background-color: $background;
-  color:            $lightBlack;
-  font-family:      'Roboto', sans-serif;
+  color:            #fff;
+  font-family:      'Avenir LT Std 45 Book', sans-serif;
   font-weight:      lighter;
-}
-
-a,
-a:active,
-a:focus {
-  color:           $darkOrange;
-  text-decoration: none;
-  transition:      color 0.3s;
-
-  &:hover {
-    color: $lightBlack;
-  }
-}
-
-p {
-  margin: 0 0 ($line-height-computed);
 }
 
 h1,
@@ -36,22 +20,18 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: 'Ubuntu', sans-serif;
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6{
+  font-family: 'Avenir LT Std 85 Heavy', sans-serif;
 }
 
-.header {
-  background-color: $lightBackground;
-
-  .header-avatar {
-    -webkit-border-radius: 50%;
-    border-radius:         50%;
-    vertical-align:        middle;
-    margin:                $vpadding*2 0;
-    max-width:             316px;
-    width:                 100%;
-  }
-
+a {
+  color: $lightblue
 }
 
 .nopadding {
@@ -59,38 +39,12 @@ h6 {
   padding-left:  0 !important;
 }
 
-.navbar-default {
-  background: $lightBackground;
-}
-
-.navbar-brand {
-  font-family: Ubuntu, Verdana, sans-serif;
-  font-size:   1.5em;
-}
-
-.navbar {
-  border:        none;
-  margin-bottom: 0;
-}
-
-.nav > li > a {
-  padding-top:    15px;
-  padding-bottom: 15px;
-  transition:     background 0.3s, color 0.3s;
-}
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  background: $orange;
-  color:      white;
-}
-
-.navbar-collapse {
-  overflow: hidden;
-}
-
 .archive-list-title,
 .tag-page-title {
   margin-top:    25px;
   margin-bottom: 25px;
+}
+
+.main-content {
+  margin: 100px 0 100px 0;
 }

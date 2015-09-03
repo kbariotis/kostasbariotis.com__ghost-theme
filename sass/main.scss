@@ -13,6 +13,7 @@ body {
   color:            #fff;
   font-family:      'Avenir LT Std 45 Book', sans-serif;
   font-weight:      lighter;
+  line-height:      21px;
 }
 
 h1,
@@ -26,7 +27,7 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6{
+.h6 {
   font-family: 'Avenir LT Std 85 Heavy', sans-serif;
 }
 
@@ -46,5 +47,5 @@ a {
 }
 
 .main-content {
-  margin: 100px 0 100px 0;
+  margin: 0 0 100px 0;
 }

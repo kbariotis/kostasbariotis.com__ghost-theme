@@ -28,8 +28,10 @@ $background: #221931;
 $darkpurple: #2e2242;
 $darkerpurple: #170f24;
 $lightpurple: #766592;
+$purple: #5E70A6;
 $lightblue: #8ab2ff;
 $red: #e52f45;
+$blue: #3B4B7D;
 
 $vpadding: 20px;
 
@@ -42,35 +44,35 @@ $vpadding: 20px;
   font-family: 'Avenir LT Std 95 Black';
   font-style:  normal;
   font-weight: normal;
-  src:         local('Avenir LT Std 95 Black'), url('../assets/fonts/AvenirLTStd-Black.woff') format('woff');
+  src:         local('Avenir LT Std 95 Black'), url('/assets/fonts/AvenirLTStd-Black.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Avenir LT Std 45 Book';
   font-style:  normal;
   font-weight: normal;
-  src:         local('Avenir LT Std 45 Book'), url('../assets/fonts/AvenirLTStd-Book.woff') format('woff');
+  src:         local('Avenir LT Std 45 Book'), url('/assets/fonts/AvenirLTStd-Book.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Avenir LT Std 85 Heavy';
   font-style:  normal;
   font-weight: normal;
-  src:         local('Avenir LT Std 85 Heavy'), url('../assets/fonts/AvenirLTStd-Heavy.woff') format('woff');
+  src:         local('Avenir LT Std 85 Heavy'), url('/assets/fonts/AvenirLTStd-Heavy.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Avenir LT Std 35 Light';
   font-style:  normal;
   font-weight: normal;
-  src:         local('Avenir LT Std 35 Light'), url('../assets/fonts/AvenirLTStd-Light.woff') format('woff');
+  src:         local('Avenir LT Std 35 Light'), url('/assets/fonts/AvenirLTStd-Light.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Avenir LT Std 55 Roman';
   font-style:  normal;
   font-weight: normal;
-  src:         local('Avenir LT Std 55 Roman'), url('../assets/fonts/AvenirLTStd-Roman.woff') format('woff');
+  src:         local('Avenir LT Std 55 Roman'), url('/assets/fonts/AvenirLTStd-Roman.woff') format('woff');
 }
 
 @import "mixins";

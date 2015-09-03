@@ -1,5 +1,7 @@
 .blog {
 
+  margin-top: 100px;
+
   .newer-posts {
     float: left;
     font-size: 16px;
@@ -46,6 +48,7 @@
   .posts {
     .post {
       margin-bottom: 40px;
+      color: rgba(255, 255, 255, 0.8);
     }
 
     .post-title {
@@ -70,4 +73,64 @@
     color: $lightblue
   }
 
+  article.main-post {
+    margin-top: 50px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    img {
+      max-width: 100%;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $lightblue;
+    }
+
+    blockquote {
+      color: rgba(255, 255, 255, 0.5);
+      border-left-color: $purple;
+    }
+
+    p {
+      padding-bottom: 20px;
+    }
+
+    .post-footer {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      font-size: 18px;
+
+      .icon-twitter {
+        color: #00aced;
+      }
+      .icon-facebook {
+        color: #3b5998;
+      }
+      .icon-google-plus {
+        color: #dd4b39;
+      }
+    }
+  }
+
+  .post-meta {
+    .author-avatar img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-top: -20px;
+    }
+
+    .tags li {
+      border: 1px solid $blue;
+      width: 80px;
+      height: 35px;
+      text-align: center;
+      border-radius:  80px / 100px;
+      padding: 5px 10px;
+
+      a {
+        color: $blue;
+      }
+    }
+  }
 }

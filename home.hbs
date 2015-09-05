@@ -1,34 +1,6 @@
 {{!< default}}
 
-<nav class="navbar navbar-default">
-  <div class="image-placeholder"></div>
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      {{#if @blog.logo}}
-        <a class="navbar-brand header-logo" itemprop="name" href="{{@blog.url}}">
-          <img class="header-avatar" src="{{@blog.logo}}" alt="{{@blog.url}}"/>
-        </a>
-      {{/if}}
-      <h1>Kostas Bariotis</h1>
-      <p>I'm Kostas Bariotis, a <a href="http://goodvid.io">Goodvidio</a>
-        Engineer. My mission is to write clean and efficient code, to solve problems on the Web and to learn something more. </p>
-    </div>
-
-    <div class="collapse navbar-collapse" id="main-menu">
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="/about">About</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+{{> "menu-logo" }}
 
 <section class="blog container">
 

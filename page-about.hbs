@@ -1,82 +1,93 @@
 {{!< default}}
 
-<section class="resume">
-  <div class="resume__inner container">
-    <section class="resume__section row">
-      <div class="medium-2">SYNOPSIS</div>
-      <div class="medium-10 resume_section-content">
+{{> "menu"}}
 
-        <p>
-          I am a software developer, currently living in Thessaloniki, Greece. I am all about high quality, clean
-          and maintainable code, especially when combined with open source, startups and developer communities. Always
-          trying to stay up-to-date with the latest standards and technologies.
-        </p>
+<section class="blog container about">
 
-        <p>
-          I started off with PHP and MySQL to create dynamic websites. I learned how to write HTML, CSS and how to read
-          the specs. Now I am constantly improving on my Javascript (among others) in order to develop all sorts of web
-          apps.
-        </p>
+  <div class="medium-8 medium-offset-2">
 
-        <p>
-          E-commerce is both my specialization and my favorite business kind. You can absolutely rely on me to setup a
-          Magento store, create a theme, a top-notch module and maintain the whole thing!
-        </p>
+    <header class="header">
+      <div class="row text-center">
+        {{#if @blog.logo}}
+          <img class="header-avatar" src="{{@blog.logo}}" alt="{{@blog.url}}"/>
+        {{/if}}
 
+        <h1>Hey, I am Kostas. Nice having you here.</h1>
       </div>
-    </section>
-    <section class="resume__section row">
-      <div class="medium-2">SKILLS</div>
-      <div class="medium-10 resume_section-content">
-        <div class="">
-          <ul>
-            <li>Immediate familiarity on new technologies</li>
-            <li>Ability to work in team effectively</li>
-            <li>Innovative, Analytical thinking</li>
-            <li>Mood for acquisition and transmission of knowledge</li>
-            <li>Organizational behavior, combined knowledge, methodically and consistently</li>
-            <li>Decision-making</li>
-            <li>Always in mood to work and learn</li>
-            <li>Excellent knowledge of cyberspace and continuous monitoring of new technologies</li>
-          </ul>
+    </header>
+
+    {{> "separator"}}
+
+    <main role="main">
+      <div class="row about-section">
+        <div class="medium-2 about-section-title">INTRO</div>
+        <div class="medium-10">
+          <p>
+            I'm Kostas Bariotis, a <a href="http://goodvid.io">Goodvidio</a>
+            Engineer. My mission is to write clean and efficient code, to solve problems on the Web and to learn
+            something
+            more.I'm Kostas Bariotis, a <a href="http://goodvid.io">Goodvidio</a>
+            Engineer. My mission is to write clean and efficient code, to solve problems on the Web and to learn
+            something
+            more.I'm Kostas Bariotis, a <a href="http://goodvid.io">Goodvidio</a>
+            Engineer. My mission is to write clean and efficient code, to solve problems on the Web and to learn
+            something
+            more.I'm Kostas Bariotis, a <a href="http://goodvid.io">Goodvidio</a>
+            Engineer. My mission is to write clean and efficient code, to solve problems on the Web and to learn
+            something
+            more.
+
+          </p>
+
+          <p>
+            I'm Kostas Bariotis, a <a href="http://goodvid.io">Goodvidio</a>
+            Engineer. My mission is to write clean and efficient code, to solve problems on the Web and to learn
+            something
+            more.
+          </p>
+
+          <p>
+            I'm Kostas Bariotis, a <a href="http://goodvid.io">Goodvidio</a>
+            Engineer. My mission is to write clean and efficient code, to solve problems on the Web and to learn
+            something
+            more.
+          </p>
         </div>
       </div>
-    </section>
-    <section class="resume__section row">
-      <div class="medium-2">PROJECTS</div>
-      <div class="medium-10 resume_section-content">
-        <p class="project">
-          <a href="http://stargento.com" target="_blank">Stargento.com</a>
-        </p>
 
-        <p class="project">
-          <a href="http://artofcolour.gr" target="_blank">Artofcolour.gr</a>
-        </p>
-
-        <p class="project">
-          <a href="http://carfinder.gr" target="_blank">Carfinder.gr</a>
-        </p>
-
-        <p class="project">
-          <a href="http://viralcontestapp.com" target="_blank">Viral Facebook App</a>
-        </p>
-
+      <div class="row about-section">
+        <div class="medium-2 about-section-title">PROJECTS</div>
+        <div class="medium-10">
+          <div class="row">
+            <div class="medium-4"><a href="">Meanimum</a></div>
+            <div class="medium-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+          <div class="row">
+            <div class="medium-4"><a href="">Stargento</a></div>
+            <div class="medium-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+          <div class="row">
+            <div class="medium-4"><a href="">Skgtech</a></div>
+            <div class="medium-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+        </div>
       </div>
-    </section>
-    <section class="resume__section row">
-      <div class="medium-2">OPEN SOURCE</div>
-      <div class="medium-10 resume_section-content">
 
-        <p class="project">
-          <a href="http://github.com/stakisko/feedly-api" target="_blank">Feedly API Wrapper</a>
-        </p>
-
-        <p class="project">
-          <a href="http://github.com/stakisko/quoteme.js" target="_blank">quoteme.js</a>
-        </p>
-
+      <div class="row about-section">
+        <div class="medium-2 about-section-title">TALKS</div>
+        <div class="medium-10">
+          <div class="row">
+            <div class="medium-4"><a href="">Javascript 101</a></div>
+            <div class="medium-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+          <div class="row">
+            <div class="medium-4"><a href="">Microservice Architecture</a></div>
+            <div class="medium-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+        </div>
       </div>
-    </section>
+
+    </main>
 
   </div>
 </section>

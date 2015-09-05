@@ -69,10 +69,6 @@
     }
   }
 
-  a {
-    color: $lightblue
-  }
-
   article.main-post {
     margin-top: 50px;
 
@@ -100,14 +96,47 @@
       padding-bottom: 40px;
       font-size: 18px;
 
+      .share-buttons {
+
+        li {
+          @media (max-width: 768px) {
+            display: block;
+            line-height: 40px;
+          }
+        }
+      }
       .icon-twitter {
         color: #00aced;
+
+        @media (max-width: 768px) {
+          background-color: #00aced;
+          color: #fff;
+          padding: 5px;
+          width: 100%;
+          display: block;
+        }
       }
       .icon-facebook {
         color: #3b5998;
+
+        @media (max-width: 768px) {
+          background-color: #3b5998;
+          color: #fff;
+          padding: 5px;
+          width: 100%;
+          display: block;
+        }
       }
       .icon-google-plus {
         color: #dd4b39;
+
+        @media (max-width: 768px) {
+          background-color: #dd4b39;
+          color: #fff;
+          padding: 5px;
+          width: 100%;
+          display: block;
+        }
       }
     }
   }
@@ -118,6 +147,12 @@
       height: 50px;
       border-radius: 50%;
       margin-top: -20px;
+    }
+
+    .tags {
+      @media (max-width: 768px) {
+        text-align: left;
+      }
     }
 
     .tags li {
@@ -132,5 +167,12 @@
         color: $blue;
       }
     }
+  }
+}
+
+.tags-collection {
+
+  .tag-meta {
+    margin-bottom: 50px;
   }
 }

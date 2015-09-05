@@ -1,26 +1,19 @@
 {{!< default}}
 
-<header class="header post-head">
-  <div class="container">
-    <div class="text-center">
+{{> "menu-logo"}}
 
-      <h1 class="post-title tag-page-title">{{tag.name}}</h1>
+<section class="blog container tags-collection">
+  <div class="medium-8 medium-offset-2">
 
-      <section class="post-meta">
-        A {{pagination.total}}-post collection
-      </section>
+    <header class="header">
+      <h1 class="tag-title tag-page-title">{{tag.name}}</h1>
+    </header>
+    <section class="tag-meta">
+      A {{pagination.total}}-post collection
+    </section>
 
-    </div>
-  </div>
-</header>
-
-<section class="blog">
-  <div class="container">
-    <div class="medium-10 medium-offset-1">
-
-      <div class="posts">
-        {{> "loop"}}
-      </div>
+    <div class="posts">
+      {{> "loop"}}
     </div>
   </div>
 </section>

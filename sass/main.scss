@@ -32,18 +32,17 @@ h6,
 }
 
 a {
-  color: $lightblue
+  color: $lightblue;
+
+  &:active,
+  &:hover {
+    color: $red;
+  }
 }
 
 .nopadding {
   padding-right: 0 !important;
   padding-left:  0 !important;
-}
-
-.archive-list-title,
-.tag-page-title {
-  margin-top:    25px;
-  margin-bottom: 25px;
 }
 
 .main-content {

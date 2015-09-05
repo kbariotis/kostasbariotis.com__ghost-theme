@@ -4,6 +4,11 @@
   font-size:  14px;
   font-family: 'Avenir LT Std 35 Light', sans-serif;
   padding:    20px 0 30px 0;
+
+  a {
+    text-decoration: none;
+  }
+
 }
 
 .footer-social {
@@ -14,6 +19,12 @@
 
   a {
     color: $lightpurple;
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+      color: $lightblue;
+    }
   }
 
   ul.social {
@@ -23,6 +34,7 @@
 
     a {
       color: $lightblue;
+      text-decoration: none;
     }
 
     li {

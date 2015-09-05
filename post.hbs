@@ -2,31 +2,7 @@
 
 {{#post}}
 
-  <nav class="navbar navbar-default">
-    <div class="image-placeholder" {{#if image}} style="background-image: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(34,25,49,0.99) 99%, rgba(34,25,49,1) 100%), url({{image}});background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,185,232,0)), color-stop(99%,rgba(34,25,49,0.99)), color-stop(100%,rgba(34,25,49,1))), url({{image}});background-image: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(34,25,49,0.99) 99%,rgba(34,25,49,1) 100%), url({{image}});background-image: -o-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(34,25,49,0.99) 99%,rgba(34,25,49,1) 100%), url({{image}});background-image: -ms-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(34,25,49,0.99) 99%,rgba(34,25,49,1) 100%), url({{image}});background-image: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(34,25,49,0.99) 99%,rgba(34,25,49,1) 100%), url({{image}});filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#221931',GradientType=0 );{{else}}no-cover{{/if}}"></div>
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="main-menu">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="/">Home</a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="/about">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  {{> "menu"}}
 
   <main class="blog container" role="main">
 
@@ -96,7 +72,7 @@
 
         <footer class="post-footer">
           <section class="share text-center">
-            <ul class="list-inline">
+            <ul class="share-buttons list-inline">
               <li>
                 <b>Share this post on</b>
               </li>

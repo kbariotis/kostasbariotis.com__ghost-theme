@@ -181,7 +181,8 @@
       height:        35px;
       text-align:    center;
       border-radius: 80px / 100px;
-      padding:       5px 10px;
+      padding:       5px 15px;
+      line-height: 23px;
 
       a {
         color: $blue;
@@ -195,4 +196,9 @@
   .tag-meta {
     margin-bottom: 50px;
   }
+}
+
+pre {
+  border-color: $lightpurple;
+  padding: 0;
 }

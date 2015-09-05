@@ -75,6 +75,7 @@ $vpadding: 20px;
   src:         local('Avenir LT Std 55 Roman'), url('/assets/fonts/AvenirLTStd-Roman.woff') format('woff');
 }
 
+@import "entypo";
 @import "mixins";
 @import "main";
 @import "header";

@@ -3,37 +3,40 @@
   background: $background;
 
   .image-placeholder {
-    height:     260px;
-    margin-bottom: -50px;
-
+    height:           260px;
+    margin-bottom:    -50px;
     background-image: url('/assets/img/header_index.jpg');
-    background-size: 100%;
+    background-size:  100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,221931+99&0+0,1+100 */
-    background-image: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(34,25,49,0.99) 99%, rgba(34,25,49,1) 100%), url('/assets/img/header_index.jpg');
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,185,232,0)), color-stop(99%,rgba(34,25,49,0.99)), color-stop(100%,rgba(34,25,49,1))), url('/assets/img/header_index.jpg');
-    background-image: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(34,25,49,0.99) 99%,rgba(34,25,49,1) 100%), url('/assets/img/header_index.jpg');
-    background-image: -o-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(34,25,49,0.99) 99%,rgba(34,25,49,1) 100%), url('/assets/img/header_index.jpg');
-    background-image: -ms-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(34,25,49,0.99) 99%,rgba(34,25,49,1) 100%), url('/assets/img/header_index.jpg');
-    background-image: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(34,25,49,0.99) 99%,rgba(34,25,49,1) 100%), url('/assets/img/header_index.jpg');
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#221931',GradientType=0 );
+    background-image: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(34, 25, 49, 0.99) 99%, rgba(34, 25, 49, 1) 100%), url('/assets/img/header_index.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(125, 185, 232, 0)), color-stop(99%, rgba(34, 25, 49, 0.99)), color-stop(100%, rgba(34, 25, 49, 1))), url('/assets/img/header_index.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(34, 25, 49, 0.99) 99%, rgba(34, 25, 49, 1) 100%), url('/assets/img/header_index.jpg');
+    background-image: -o-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(34, 25, 49, 0.99) 99%, rgba(34, 25, 49, 1) 100%), url('/assets/img/header_index.jpg');
+    background-image: -ms-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(34, 25, 49, 0.99) 99%, rgba(34, 25, 49, 1) 100%), url('/assets/img/header_index.jpg');
+    background-image: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, rgba(34, 25, 49, 0.99) 99%, rgba(34, 25, 49, 1) 100%), url('/assets/img/header_index.jpg');
+    filter:           progid:DXImageTransform.Microsoft.gradient(startColorstr='#007db9e8', endColorstr='#221931', GradientType=0);
 
     @media (max-width: 1200px) {
       height: 160px;
     }
 
     @media (max-width: 768px) {
-      height: 100px;
+      height: 80px;
     }
   }
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
   color: $red;
 }
 
 .navbar-header {
   color: #fff;
+
+  @media(max-width: 768px) {
+    text-align: center;
+  }
 
   h1 {
     font-size: 28px;
@@ -43,12 +46,26 @@
     font-size:   16px;
     max-width:   640px;
     font-family: 'Avenir LT Std 55 Roman', sans-serif;
+    @media(max-width: 768px) {
+      padding: 0 30px;
+      max-width: 100%;
+    }
   }
 
-  .header-logo img {
-    width:         100px;
-    border-radius: 50%;
-    border:        4px solid #fff;
+  .header-logo {
+
+    @media(max-width: 768px) {
+      float: none;
+    }
+    img {
+      width:         100px;
+      border-radius: 50%;
+      border:        4px solid #fff;
+
+      @media(max-width: 768px) {
+        margin: 0 auto;
+      }
+    }
   }
 
 }
@@ -62,6 +79,13 @@
 .navbar {
   border:        none;
   margin-bottom: 0;
+}
+
+.nav>li>a {
+  @media(max-width: 768px) {
+    padding: 10px 30px;
+    text-align: right;
+  }
 }
 
 .navbar-default .navbar-nav > li > a {

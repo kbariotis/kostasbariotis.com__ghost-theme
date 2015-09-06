@@ -27,33 +27,14 @@
     }
   }
 
-  .separator,
-  .separator > .first-level,
-  .separator > .first-level > .second-level,
-  .separator > .first-level > .second-level > .third-level {
-    height: 2px;
-  }
-
-  .separator > .first-level > .second-level > .third-level {
-    background: #e52f45;
-    width:      50%;
-  }
-
-  .separator > .first-level > .second-level {
-    background: #b42b3e;
-    width:      50%;
-  }
-
-  .separator > .first-level {
-    background: #8ab2ff;
-    width:      75%;
-  }
-
   .separator {
+    height: 2px;
     background:    #4d71b7;
     width:         100%;
     margin-bottom: 10px;
     margin-top:    10px;
+    display: block;
+    background: linear-gradient(to right, #e52f45 0%, #e52f45 25%, #b42b3e 25%, #b42b3e 50%, #8ab2ff 50%, #8ab2ff 75%, #4d71b7 75%, #4d71b7 100%);
   }
 
   .header {

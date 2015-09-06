@@ -2,8 +2,7 @@
   {{pagination}}
 </header>
 
-<div class="separator"><div class="first-level"><div class="second-level"><div class="third-level"></div></div></div></div>
-
+{{> "separator"}}
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
   <article class="{{post_class}}">
@@ -27,7 +26,7 @@
   </article>
 {{/foreach}}
 
-<div class="separator"></div>
+{{> "separator"}}
 
 <header class="header extra-pagination inner text-center">
   {{pagination}}

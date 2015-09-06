@@ -10,7 +10,7 @@
       Latest Posts
     </header>
 
-    <div class="separator"><div class="first-level"><div class="second-level"><div class="third-level"></div></div></div></div>
+    {{> "separator"}}
 
     <div class="posts">
       {{#foreach posts}}
@@ -35,7 +35,7 @@
           </article>
       {{/foreach}}
 
-      <div class="separator"><div class="first-level"><div class="second-level"><div class="third-level"></div></div></div></div>
+      {{> "separator"}}
 
       <article class="post text-right">
         <header class="header post-head">

@@ -26,6 +26,7 @@ module.exports = function (grunt) {
         relativeAssets: true,
         outputStyle: 'compressed',
         noLineComments: true,
+        raw: 'Encoding.default_external = \'utf-8\'\n',
         specify: [
           'sass/boot.scss'
         ]

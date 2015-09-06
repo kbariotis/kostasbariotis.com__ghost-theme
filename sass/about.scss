@@ -7,20 +7,20 @@
   header {
 
     .header-avatar {
-      width: 150px;
-      height: 150px;
+      width:         150px;
+      height:        150px;
       border-radius: 50%;
-      border: 4px solid #fff;
+      border:        4px solid #fff;
     }
   }
 
   .about-section-title {
-    color: $red;
+    color:       $red;
     font-family: 'Avenir LT Std 85 Heavy', sans-serif;
   }
 
   .about-section {
-    margin-top: 40px;
+    margin-top:    40px;
     margin-bottom: 40px;
 
     .row {
@@ -29,6 +29,12 @@
 
     .bio-date {
       color: $lightblue;
+    }
+
+    .text-right {
+      @media(max-width: 768px) {
+        text-align: left;
+      }
     }
   }
 

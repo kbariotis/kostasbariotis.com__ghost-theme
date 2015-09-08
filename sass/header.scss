@@ -109,6 +109,10 @@
   font-size:   0.9em;
   font-weight: bold;
   font-family: 'Avenir LT Std 85 Heavy', sans-serif;
+
+  @media(max-width: 768px) {
+    line-height: 40px;
+  }
 }
 
 .navbar-collapse {

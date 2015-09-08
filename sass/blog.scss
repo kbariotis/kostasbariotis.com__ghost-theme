@@ -14,8 +14,8 @@
     font-size: 0.8em;
 
     @media(max-width: 768px) {
-      display: block;
-      float: none;
+      display:       block;
+      float:         none;
       margin-bottom: 20px;
     }
   }
@@ -25,20 +25,20 @@
     font-size: 0.8em;
 
     @media(max-width: 768px) {
-      display: block;
-      float: none;
+      display:    block;
+      float:      none;
       margin-top: 20px;
     }
   }
 
   .separator {
-    height: 2px;
+    height:        2px;
     background:    #4d71b7;
     width:         100%;
     margin-bottom: 10px;
     margin-top:    10px;
-    display: block;
-    background: linear-gradient(to right, #e52f45 0%, #e52f45 25%, #b42b3e 25%, #b42b3e 50%, #8ab2ff 50%, #8ab2ff 75%, #4d71b7 75%, #4d71b7 100%);
+    display:       block;
+    background:    linear-gradient(to right, #e52f45 0%, #e52f45 25%, #b42b3e 25%, #b42b3e 50%, #8ab2ff 50%, #8ab2ff 75%, #4d71b7 75%, #4d71b7 100%);
   }
 
   .header {
@@ -58,8 +58,8 @@
     }
 
     .post-title {
-      font-size: 0.9em;
-      color:     $lightblue;
+      font-size:     0.9em;
+      color:         $lightblue;
       margin-bottom: 5px;
     }
 
@@ -163,15 +163,27 @@
 
     .tags li {
       border:        1px solid $blue;
-      width:         auto;
-      height:        35px;
       text-align:    center;
       border-radius: 80px / 100px;
-      padding:       5px 20px;
-      line-height: 23px;
 
       a {
-        color: $blue;
+        display:         block;
+        width:       auto;
+        height:      35px;
+        line-height: 27px;
+        padding:     5px 20px;
+      }
+
+      a:hover, a:active {
+        text-decoration: none;
+      }
+
+      &:hover {
+        background: $lightblue;
+
+        a {
+          color: $darkpurple;
+        }
       }
     }
   }
@@ -186,11 +198,11 @@
 
 pre {
   border-color: $lightpurple;
-  padding: 0;
+  padding:      0;
 }
 
 code {
   background: #23241f;
-  color: #fff;
-  border: 1px solid $lightpurple;
+  color:      #fff;
+  border:     1px solid $lightpurple;
 }

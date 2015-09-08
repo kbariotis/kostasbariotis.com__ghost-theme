@@ -1,5 +1,9 @@
 .blog {
-  margin-top: 100px;
+  margin-top: 80px;
+
+  .home-template & {
+    margin-top: 100px;
+  }
 
   @media(max-width: 768px) {
     margin-top: 50px;

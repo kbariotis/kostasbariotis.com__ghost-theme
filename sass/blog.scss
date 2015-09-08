@@ -43,7 +43,7 @@
 
   .header {
     color:       $red;
-    font-size:   1.6em;
+    font-size:   1.5em;
     font-family: 'Avenir LT Std 85 Heavy', sans-serif;
 
     @media(max-width: 768px) {
@@ -153,6 +153,7 @@
       height:        50px;
       border-radius: 50%;
       margin-top:    -20px;
+      border:        3px solid white;
     }
 
     .tags {
@@ -167,7 +168,7 @@
       border-radius: 80px / 100px;
 
       a {
-        display:         block;
+        display:     block;
         width:       auto;
         height:      35px;
         line-height: 27px;

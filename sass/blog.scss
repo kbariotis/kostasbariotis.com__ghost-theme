@@ -7,7 +7,7 @@
 
   .newer-posts {
     float:     left;
-    font-size: 16px;
+    font-size: 0.8em;
 
     @media(max-width: 768px) {
       display: block;
@@ -18,7 +18,7 @@
 
   .older-posts {
     float:     right;
-    font-size: 16px;
+    font-size: 0.8em;
 
     @media(max-width: 768px) {
       display: block;
@@ -39,7 +39,7 @@
 
   .header {
     color:       $red;
-    font-size:   24px;
+    font-size:   1.6em;
     font-family: 'Avenir LT Std 85 Heavy', sans-serif;
 
     @media(max-width: 768px) {
@@ -54,8 +54,9 @@
     }
 
     .post-title {
-      font-size: 20px;
+      font-size: 0.9em;
       color:     $lightblue;
+      margin-bottom: 5px;
     }
 
     time {
@@ -95,7 +96,7 @@
     .post-footer {
       padding-top:    40px;
       padding-bottom: 40px;
-      font-size:      18px;
+      font-size:      1.2em;
 
       .share-buttons {
 

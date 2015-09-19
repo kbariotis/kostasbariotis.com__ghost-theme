@@ -25,11 +25,15 @@
     }
 
     @media (max-width: 1200px) {
-      height: 160px;
+      height: 200px;
+      margin-left: -150px;
+      margin-right: -150px;
     }
 
     @media (max-width: 768px) {
-      height: 80px;
+      height: 200px;
+      margin-left: -300px;
+      margin-right: -300px;
     }
   }
 }

@@ -72,6 +72,9 @@
 
   .header-logo {
 
+    @media(max-width: 1200px) {
+      height: 150px;
+    }
     @media(max-width: 768px) {
       float: none;
     }

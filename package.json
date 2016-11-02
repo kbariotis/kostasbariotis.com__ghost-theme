@@ -1,10 +1,26 @@
 {
   "name": "kostasbariotis",
   "version": "0.0.1",
-
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-compass": "~0.2.0",
-    "grunt-contrib-watch": "~0.4.0"
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "2.0.0-beta.4",
+    "grunt": "~1.0.1",
+    "grunt-contrib-compass": "~1.1.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "2.1.0-beta.25",
+    "webpack-dev-server": "2.1.0-beta.9"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "compass": "^0.1.1",
+    "file-loader": "^0.9.0",
+    "highlight.js": "^9.8.0",
+    "jquery": "^3.1.1",
+    "matchdep": "^1.0.1",
+    "pjax": "^0.2.4"
   }
 }

@@ -1,26 +1,29 @@
 @charset "UTF-8";
 
 @import url(//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css);
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/variables";
+
+$bootstrap-sass-asset-helper: true;
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
 
 $font-size-base: 16px;
 
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/normalize";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/print";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/glyphicons";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/scaffolding";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/type";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/code";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/forms";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/navbar";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/navs";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/component-animations";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
 
 /* Override Bootstrap Grid naming */
 @import "grid";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/utilities";
-@import "../components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/responsive-utilities";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 /**
 * COLORS mostly from http://materialcolors.com/

@@ -1,8 +1,10 @@
 'use strict';
 
 module.exports = function (grunt) {
-  // load all grunt tasks
-  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+
+  require('load-grunt-tasks')(grunt);
+
+  grunt.loadNpmTasks('grunt-sass');
 
   grunt.initConfig({
     watch: {
@@ -13,42 +15,20 @@ module.exports = function (grunt) {
         tasks: ['compass:server']
       }
     },
-    compass: {
+    sass: {
       options: {
-        sassDir: 'sass',
-        cssDir: 'assets/css',
-        generatedImagesDir: '.tmp/img/generated',
-        imagesDir: 'img',
-        javascriptsDir: 'js',
-        importPath: 'components',
-        httpImagesPath: '/img',
-        httpGeneratedImagesPath: '/img/generated',
-        relativeAssets: true,
-        outputStyle: 'compressed',
-        noLineComments: true,
-        raw: 'Encoding.default_external = \'utf-8\'\n',
-        specify: [
-          'sass/boot.scss'
-        ]
+        sourceMap: true
       },
       server: {
-        options: {
-          debugInfo: true
+        files: {
+          'assets/css/boot.css': 'sass/boot.scss'
         }
       }
     }
   });
 
-  grunt.registerTask('default', function (target) {
-    grunt.task.run([
-      'watch'
-    ]);
-  });
+  grunt.registerTask('default', ['watch']);
 
-  grunt.registerTask('sass:build', function(target){
-    grunt.task.run([
-      'compass:server'
-    ]);
-  });
+  grunt.registerTask('sass:build', ['sass:server']);
 
 };

@@ -2,6 +2,7 @@
 
 const webpack = require('webpack');
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     context: __dirname + '/src/js',
@@ -12,16 +13,14 @@ module.exports = {
         rules: [
             {
                 test: /\.(sass|scss)$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    { loader: 'sass-loader', options: { modules: true } }
-                ]
+                loader: ExtractTextPlugin.extract({
+                    fallbackLoader: 'style-loader',
+                    loader: [
+                        'css-loader',
+                        { loader: 'sass-loader', options: { modules: true } }
+                    ]
+                })
             },
-            // {
-            //     test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-            //     loader: 'url-loader?limit=100000'
-            // },
             {
                 test: /\.woff(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: "url-loader?limit=10000&minetype=application/font-woff"
@@ -33,8 +32,8 @@ module.exports = {
         ],
     },
     output: {
-        path: __dirname + '/assets/js',
-        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'assets'),
+        filename: 'js/[name].bundle.js',
     },
     resolve: {
         modules: [path.resolve(__dirname, 'src'), 'node_modules']
@@ -42,4 +41,7 @@ module.exports = {
     devServer: {
         contentBase: __dirname,
     },
+    plugins: [
+        new ExtractTextPlugin('css/styles.css')
+    ]
 };

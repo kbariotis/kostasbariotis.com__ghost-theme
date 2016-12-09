@@ -1,6 +1,4 @@
 node_modules/
-components/
-.sass-cache/
 assets/css/*
-
+assets/js/*
 .idea/

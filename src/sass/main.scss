@@ -2,8 +2,8 @@ html,
 body {
     background-color: $background;
     color: #fff;
-    font-family: 'Roboto Slab', serif;
     font-weight: 300;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5em;
     font-size: 18px;
 }
@@ -21,6 +21,7 @@ h6,
 .h5,
 .h6 {
     font-weight: 700;
+    font-family: 'Roboto Slab', serif;
 }
 
 a {

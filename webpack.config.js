@@ -36,7 +36,10 @@ module.exports = {
         filename: 'js/[name].bundle.js',
     },
     resolve: {
-        modules: [path.resolve(__dirname, 'src'), 'node_modules']
+        modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+        alias: {
+            jquery: 'jquery/src/jquery'
+        }
     },
     devServer: {
         contentBase: __dirname,

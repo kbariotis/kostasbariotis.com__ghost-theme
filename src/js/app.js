@@ -1,4 +1,5 @@
 import '../sass/boot.scss';
+import 'jquery';
 import 'bootstrap-sass/assets/javascripts/bootstrap/collapse.js';
 
 import Pjax from 'pjax';
